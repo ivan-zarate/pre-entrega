@@ -5,7 +5,7 @@ check=0
 def registro(usuario, contrasena):
     try:
         clientes[usuario]=contrasena
-        return(usuario)
+        return usuario
     except:
       print('An exception occurred')
       
@@ -28,7 +28,7 @@ def update(usuario):
         for k in clientes.keys():
             if k == usuario:
                 clientes[usuario]=newPass
-                return("Se ha guardado su nueva contraseña")
+                return "Se ha guardado su nueva contraseña"
     except:
       print('An exception occurred')
     
