@@ -15,9 +15,9 @@ def login(usuario, contrasena):
         for k in clientes.keys():
             if k == usuario:
                 if clientes[usuario]==contrasena:
-                    return("Usuario logueado correctamente")
+                    return f"Bienvenido {usuario} !"
                 else:
-                    return("La contraseña ingresada no es correcta")
+                    return "La contraseña ingresada no es correcta"
     except:
             print('An exception occurred')
             
@@ -56,7 +56,7 @@ while crear!='fin':
             usuario=input("Ingrese su nombre: ")
             password=input("Ingrese contraseña: ")
             resultado=registro(usuario, password)
-            print("Gracias por registrarte ", resultado,"!")
+            print(f"Gracias por registrarte {resultado}!")
         elif variable.capitalize()=="L":
             usuario=input("Ingrese su nombre: ")
             password=input("Ingrese contraseña: ")
@@ -78,6 +78,7 @@ while crear!='fin':
         elif variable.capitalize()=="M":
                 verBase()
                     
-                
+
+                             
 
       
