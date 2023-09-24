@@ -23,12 +23,15 @@ def login(usuario, contrasena):
             
             
 def update(usuario):
-    newPass=input("Ingrese su nueva contraseña: ")
-    for k in clientes.keys():
+    try:
+        newPass=input("Ingrese su nueva contraseña: ")
+        for k in clientes.keys():
             if k == usuario:
-                new=clientes[usuario]=newPass
+                clientes[usuario]=newPass
                 return("Se ha guardado su nueva contraseña")
-                
+    except:
+      print('An exception occurred')
+    
 
 def verBase():
     try:
@@ -77,5 +80,4 @@ while crear!='fin':
                     
                 
 
-      
       
